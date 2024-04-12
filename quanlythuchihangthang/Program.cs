@@ -12,6 +12,7 @@ namespace quanlythuchihangthang
         {
             Console.WriteLine("hello");
             Console.WriteLine("son ne hehe");
+            Console.WriteLine("ccc");
         }
     }
 }

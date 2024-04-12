@@ -1,4 +1,5 @@
-﻿using System;
+﻿using quanlythuchihangthang;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -89,6 +90,9 @@ namespace quanly_thu_chi_trongthang
             dm.TaoDanhMuc();
 
             dm.KiemTraVuotMucChiTieu();
+
+            ThongKe tk = new ThongKe(dsgd);
+
 
 
 

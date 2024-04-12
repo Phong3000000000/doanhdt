@@ -62,5 +62,19 @@ namespace quanly_thu_chi_trongthang
             Console.WriteLine("tong cua ds giao dich: " + sum);
             return sum;
         }
+
+        public virtual double Tinhtong_theo_loai(string loai)
+        {
+            double sum = 0;
+            for (int i = 0; i < dsgiaodich.Count(); i++)
+            {
+                if (dsgiaodich[i].Loai == loai)
+                {
+                    sum += dsgiaodich[i].Sotien;
+                }
+            }
+            Console.WriteLine("tong cua ds giao dich: " + sum);
+            return sum;
+        }
     }
 }

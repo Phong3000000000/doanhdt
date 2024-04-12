@@ -22,6 +22,16 @@ namespace quanly_thu_chi_trongthang
         public string Danhmuc { get => danhmuc; set => danhmuc = value; }
         public string Motadanhmuc { get => motadanhmuc; set => motadanhmuc = value; }
 
+
+        public GiaoDich()
+        {
+            Loai = "";
+            Sotien = 1;
+            Mota = "";
+            Thoigian = "";
+            Danhmuc = "";
+            Motadanhmuc = "";
+        }
         public GiaoDich(string loaigd, double sotiengd, string motagd, string thoigiangd, string danhmucgd, string motadanhmucgd)
         {
             Loai = loaigd;
@@ -32,8 +42,9 @@ namespace quanly_thu_chi_trongthang
             Motadanhmuc = motadanhmucgd;
         }
 
-        public void nhap1gd()
+        public void tao1gd()
         {
+            Console.WriteLine("==========================");
             Console.WriteLine("nhap loai cua giao dich");
             Loai = Console.ReadLine();
             Console.WriteLine("nhap so tien cua giao dich");
@@ -47,6 +58,19 @@ namespace quanly_thu_chi_trongthang
             Console.WriteLine("nhap mo ta danh muc cua giao dich");
             Motadanhmuc = Console.ReadLine();
         }
+
+        public void xuat1gd()
+        {
+            Console.WriteLine("=======================================");
+            Console.WriteLine("loai cua giao dich: " + Loai);
+            Console.WriteLine("so tien cua giao dich: " + Sotien);
+            Console.WriteLine("mo ta cua giao dich: " + Mota);
+            Console.WriteLine("thoi gian cua giao dich: " + Thoigian);
+            Console.WriteLine("danh muc cua giao dich: " + Danhmuc);
+            Console.WriteLine("mo ta danh muc cua giao dich: " + Motadanhmuc);
+        }
+
+
 
 
     }

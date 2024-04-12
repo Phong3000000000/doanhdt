@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace quanly_thu_chi_trongthang
 {
-    internal class DanhMucMuaSam : DanhMuc
+    internal class DanhMucMuaSam : DanhMucChiTieu
     {
     }
 }

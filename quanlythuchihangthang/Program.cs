@@ -11,6 +11,7 @@ namespace quanlythuchihangthang
         static void Main(string[] args)
         {
             Console.WriteLine("hello");
+            Console.WriteLine("son ne hehe");
         }
     }
 }

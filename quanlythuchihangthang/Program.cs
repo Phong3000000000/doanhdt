@@ -27,7 +27,7 @@ namespace quanly_thu_chi_trongthang
 
 
             DanhMucChiTieu dm = new DanhMucChiTieu(dsgd);
-            //dm.TaoDanhMuc();
+            dm.TaoDanhMuc();
             dm.ThongBaoMucChiTieu();
             dm.KiemTraVuotMucChiTieu();
 

@@ -15,23 +15,35 @@ namespace quanly_thu_chi_trongthang
             //gd.xuat1gd();
 
             DanhSachGiaoDich dsgd = new DanhSachGiaoDich();
-            dsgd.them_gd_vao_ds_giaodich();
-            dsgd.them_gd_vao_ds_giaodich();
+            int chon;
+            do
+            {
+                Console.WriteLine("nhap gia tri de thuc hien: ");
+                chon = int.Parse(Console.ReadLine());
+                switch (chon)
+                {
+                    case 1:
+                        dsgd.them_gd_vao_ds_giaodich();
+                        break;
+                    case 2:
+                        dsgd.xuat_ds_giaodich();
+                        break;
+                    case 3:
+                        dsgd.Tinhtong_theo_danhmuc("an uong");
+                        break;
+                    case 4:
+                        dsgd.xoa_gd_khoi_ds_giaodich();
+                        break;
+                    case 5:
+                        break;
+                    default:
+                        break;
+                }
+            } while (chon != 0);
 
 
-<<<<<<< HEAD
-            dsgd.xuat_ds_giaodich();
-            dsgd.Tinhtong_theo_danhmuc("an uong");
 
-            DanhMucChiTieu dm = new DanhMucChiTieu();
-            dm.KiemTraVuotMucChiTieu(dsgd);
-=======
-            //dsgd.xuat_ds_giaodich();
-            //dsgd.Tinhtong_theo_danhmuc("an uong");
->>>>>>> 118bc8eaa2c9afd2c0f845ac1fcb4f3d673f7a39
 
-            DanhMucChiTieu dmct = new DanhMucChiTieu();
-            dmct.xuatgiatri();
 
             Console.ReadLine();
         }

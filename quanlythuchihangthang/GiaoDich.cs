@@ -48,20 +48,21 @@ namespace quanly_thu_chi_trongthang
         public void tao1gd()
         {
             Console.WriteLine("==========================");
-            Console.WriteLine("nhap ma cua giao dich");
+            Console.Write("nhap ma cua giao dich");
             Magd = Console.ReadLine();
-            Console.WriteLine("nhap loai cua giao dich");
+            Console.Write("nhap loai cua giao dich");
             Loai = Console.ReadLine();
-            Console.WriteLine("nhap so tien cua giao dich");
+            Console.Write("nhap so tien cua giao dich");
             Sotien = double.Parse(Console.ReadLine());
-            Console.WriteLine("nhap mo ta cua giao dich");
+            Console.Write("nhap mo ta cua giao dich");
             Mota = Console.ReadLine();
-            Console.WriteLine("nhap thoi gian cua giao dich");
+            Console.Write("nhap thoi gian cua giao dich");
             Thoigian = Console.ReadLine();
-            Console.WriteLine("nhap danh muc cua giao dich");
+            Console.Write("nhap danh muc cua giao dich");
             Danhmuc = Console.ReadLine();
-            Console.WriteLine("nhap mo ta danh muc cua giao dich");
+            Console.Write("nhap mo ta danh muc cua giao dich");
             Motadanhmuc = Console.ReadLine();
+            Console.Write("==========================");
         }
 
         public void xuat1gd()

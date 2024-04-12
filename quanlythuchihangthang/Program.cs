@@ -18,6 +18,7 @@ namespace quanly_thu_chi_trongthang
             Console.WriteLine("1. thao tac voi ngan sach");
             Console.WriteLine("2. thao tac voi cac danh muc");
             Console.WriteLine("3. thao tac voi cac giao dich");
+            Console.WriteLine("3. bang thong ke");
             Console.WriteLine("=========================");
         }
 
@@ -81,17 +82,18 @@ namespace quanly_thu_chi_trongthang
             } while (chon != 0);
 
 
-            double tinhTong = dsgd.Tinhtong_theo_danhmuc("an uong");
+            //double tinhTong = dsgd.Tinhtong_theo_danhmuc("an uong");
 
 
 
-            DanhMucChiTieu dm = new DanhMucChiTieu(tinhTong);
+            //DanhMucChiTieu dm = new DanhMucChiTieu(tinhTong);
 
-            dm.TaoDanhMuc();
+            //dm.TaoDanhMuc();
 
-            dm.KiemTraVuotMucChiTieu();
+            //dm.KiemTraVuotMucChiTieu();
 
             ThongKe tk = new ThongKe(dsgd);
+            tk.BangThongKe();
 
 
 

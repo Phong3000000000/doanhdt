@@ -12,7 +12,7 @@ namespace quanly_thu_chi_trongthang
 
         public void them_gd_vao_ds_giaodich()
         {
-            Console.WriteLine("them giao dich vao danh sach giao dich");
+            Console.WriteLine("them giao dich vao danh sach giao dich: ");
             GiaoDich gd = new GiaoDich();
             gd.tao1gd();
 

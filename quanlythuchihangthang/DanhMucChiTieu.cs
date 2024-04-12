@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace quanly_thu_chi_trongthang
 {
-    internal class DanhMucChiTieu
+    internal class DanhMucChiTieu : DanhSachGiaoDich
     {
         string _TenDanhMuc;
         double _MucNganSachDuocPhanBo;
+
+        public override double Tinhtong_theo_danhmuc(string loaidanhmuc)
+        {
+            return base.Tinhtong_theo_danhmuc(loaidanhmuc);
+        }
         double _MucChiTieu;
+
+        public void xuatgiatri()
+        {
+            DanhSachGiaoDich dsgd = new DanhSachGiaoDich();
+            double tinhtong = dsgd.Tinhtong_theo_danhmuc("an uong");
+            Console.WriteLine("{0}", tinhtong);
+        }
 
 
         public string TenDanhMuc { get => _TenDanhMuc; set => _TenDanhMuc = value; }

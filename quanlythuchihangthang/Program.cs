@@ -19,12 +19,19 @@ namespace quanly_thu_chi_trongthang
             dsgd.them_gd_vao_ds_giaodich();
 
 
+<<<<<<< HEAD
             dsgd.xuat_ds_giaodich();
             dsgd.Tinhtong_theo_danhmuc("an uong");
 
             DanhMucChiTieu dm = new DanhMucChiTieu();
             dm.KiemTraVuotMucChiTieu(dsgd);
+=======
+            //dsgd.xuat_ds_giaodich();
+            //dsgd.Tinhtong_theo_danhmuc("an uong");
+>>>>>>> 118bc8eaa2c9afd2c0f845ac1fcb4f3d673f7a39
 
+            DanhMucChiTieu dmct = new DanhMucChiTieu();
+            dmct.xuatgiatri();
 
             Console.ReadLine();
         }

@@ -64,7 +64,7 @@ namespace quanly_thu_chi_trongthang
             }
         }
 
-        public void TaoDanhMuc()
+        public virtual void TaoDanhMuc()
         {
             Console.Write("Moi ban nhap ten danh muc: ");
             TenDanhMuc = Console.ReadLine();
@@ -75,7 +75,7 @@ namespace quanly_thu_chi_trongthang
             Console.WriteLine();
         }
 
-        public void XuatDanhMuc()
+        public virtual void XuatDanhMuc()
         {
             Console.WriteLine("Danh muc: {0}", TenDanhMuc);
             Console.WriteLine("Muc ngan sach duoc phan bo: {0}", MucNganSachDuocPhanBo);

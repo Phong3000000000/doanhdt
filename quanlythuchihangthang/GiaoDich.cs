@@ -6,81 +6,72 @@ using System.Threading.Tasks;
 
 namespace quanly_thu_chi_trongthang
 {
-    class GiaoDich
+    public class GiaoDich
     {
-        public string Loai { get; set; }
-        public double SoTien { get; set; }
-        public string MoTa { get; set; }
-        public DateTime Ngay { get; set; }
+        string loai;
+        double sotien;
+        string mota;
+        string thoigian;
+        string danhmuc;
+        string motadanhmuc;
+
+        public string Loai { get => loai; set => loai = value; }
+        public double Sotien { get => sotien; set => sotien = value; }
+        public string Mota { get => mota; set => mota = value; }
+        public string Thoigian { get => thoigian; set => thoigian = value; }
+        public string Danhmuc { get => danhmuc; set => danhmuc = value; }
+        public string Motadanhmuc { get => motadanhmuc; set => motadanhmuc = value; }
 
 
-        public GiaoDich(string type, double amount, string description, DateTime date)
+        public GiaoDich()
         {
-            Loai = type;
-            SoTien = amount;
-            MoTa = description;
-            Ngay = date;
+            Loai = "";
+            Sotien = 1;
+            Mota = "";
+            Thoigian = "";
+            Danhmuc = "";
+            Motadanhmuc = "";
+        }
+        public GiaoDich(string loaigd, double sotiengd, string motagd, string thoigiangd, string danhmucgd, string motadanhmucgd)
+        {
+            Loai = loaigd;
+            Sotien = sotiengd;
+            Mota = motagd;
+            Thoigian = thoigiangd;
+            Danhmuc = danhmucgd;
+            Motadanhmuc = motadanhmucgd;
         }
 
-        // chuyển đổi một đối tượng thành 1 chuỗi
-        public override string ToString()
+        public void tao1gd()
         {
-            return $"{Ngay:d} - {Loai} - {SoTien:C} - {MoTa}";
+            Console.WriteLine("==========================");
+            Console.WriteLine("nhap loai cua giao dich");
+            Loai = Console.ReadLine();
+            Console.WriteLine("nhap so tien cua giao dich");
+            Sotien = double.Parse(Console.ReadLine());
+            Console.WriteLine("nhap mo ta cua giao dich");
+            Mota = Console.ReadLine();
+            Console.WriteLine("nhap thoi gian cua giao dich");
+            Thoigian = Console.ReadLine();
+            Console.WriteLine("nhap danh muc cua giao dich");
+            Danhmuc = Console.ReadLine();
+            Console.WriteLine("nhap mo ta danh muc cua giao dich");
+            Motadanhmuc = Console.ReadLine();
         }
 
-        public static void ThemGiaoDich(List<GiaoDich> tongluongtien)
+        public void xuat1gd()
         {
-            Console.Write("Nhap loai giao dich (Thu/Chi): ");
-            string type = Console.ReadLine();
-
-            Console.Write("Nhap so tien: ");
-            double amount;
-            while (!double.TryParse(Console.ReadLine(), out amount))
-            {
-                Console.WriteLine("So tien khong hop le. Vui long nhap lai.");
-                Console.Write("Nhap so tien: ");
-            }
-
-            Console.Write("Nhap mo ta: ");
-            string description = Console.ReadLine();
-
-            // Lấy ngày hiện tại
-            DateTime date = DateTime.Now;
-
-            // Tạo đối tượng Transaction và thêm vào danh sách
-            GiaoDich GiaoDichMoi = new GiaoDich(type, amount, description, date); // khởi tão đối tượng dựa vào class
-            tongluongtien.Add(GiaoDichMoi);
-
-            Console.WriteLine("Giao dich duoc them thanh cong.");
+            Console.WriteLine("=======================================");
+            Console.WriteLine("loai cua giao dich: " + Loai);
+            Console.WriteLine("so tien cua giao dich: " + Sotien);
+            Console.WriteLine("mo ta cua giao dich: " + Mota);
+            Console.WriteLine("thoi gian cua giao dich: " + Thoigian);
+            Console.WriteLine("danh muc cua giao dich: " + Danhmuc);
+            Console.WriteLine("mo ta danh muc cua giao dich: " + Motadanhmuc);
         }
 
-        public static void HienThiGiaoDich(List<GiaoDich> tonggiaodich)
-        {
-            Console.WriteLine("----- Danh sach giao dich -----");
-            foreach (GiaoDich motgiaodich in tonggiaodich)
-            {
-                Console.WriteLine(motgiaodich);
-            }
-        }
 
-        public static void HienThi_TongThuVaChiTrongThang(List<GiaoDich> tonggiaodich)
-        {
-            double TongThu = 0;
-            double TongChi = 0;
 
-            foreach (GiaoDich motgiaodich in tonggiaodich)
-            {
-                if (motgiaodich.Loai.Equals("Thu", StringComparison.OrdinalIgnoreCase))
-                {
-                    TongThu += motgiaodich.SoTien;
-                }
-                else if (motgiaodich.Loai.Equals("Chi", StringComparison.OrdinalIgnoreCase))
-                {
-                    TongChi += motgiaodich.SoTien;
-                }
-            }
-            Console.WriteLine($"Tong thu nhap trong 1 thang: {TongThu:C}");
-            Console.WriteLine($"Tong chi phi trong 1 thang: {TongChi:C}");
-        }
+
     }
 }

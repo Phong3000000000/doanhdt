@@ -4,15 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace quanlythuchihangthang
+namespace quanly_thu_chi_trongthang
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello");
-            Console.WriteLine("son ne hehe");
-            Console.WriteLine("ccc");
+            //GiaoDich gd = new GiaoDich();
+            //gd.tao1gd();
+            //gd.xuat1gd();
+
+            DanhSachGiaoDich dsgd = new DanhSachGiaoDich();
+            dsgd.them_gd_vao_ds_giaodich();
+            dsgd.xuat_ds_giaodich();
+
+
+            Console.ReadLine();
         }
     }
 }

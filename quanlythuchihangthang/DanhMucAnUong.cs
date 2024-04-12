@@ -10,7 +10,21 @@ namespace quanly_thu_chi_trongthang
     {
         string _LoaiAnUong;
 
-        public string LoaiAnUong { get => _LoaiAnUong; set => _LoaiAnUong = value; }
+        public string LoaiAnUong 
+        { 
+            get => _LoaiAnUong; 
+            set
+            {
+                if (value == "Man" || value == "Chay")
+                {
+                    _LoaiAnUong = value;
+                }
+                else
+                {
+                    _LoaiAnUong = "Man";
+                }
+            }
+        }
 
         public DanhMucAnUong() : base() { }
 
@@ -18,5 +32,21 @@ namespace quanly_thu_chi_trongthang
         {
             this.LoaiAnUong = loaianuong;
         }
+
+        public override void TaoDanhMuc()
+        {
+            base.TaoDanhMuc();
+            Console.Write("Moi ban nhap loai an uong (Man/Chay): ");
+            Console.WriteLine();
+        }
+
+        public override void XuatDanhMuc()
+        {
+            base.XuatDanhMuc();
+            Console.WriteLine("Loai an uong: {0}", LoaiAnUong);
+            Console.WriteLine();
+        }
+
+
     }
 }

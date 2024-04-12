@@ -42,9 +42,6 @@ namespace quanly_thu_chi_trongthang
             } while (chon != 0);
 
 
-<<<<<<< HEAD
-=======
-            //dsgd.xuat_ds_giaodich();
             double tinhTong = dsgd.Tinhtong_theo_danhmuc("an uong");
 
 
@@ -54,7 +51,6 @@ namespace quanly_thu_chi_trongthang
             dm.TaoDanhMuc();
 
             dm.KiemTraVuotMucChiTieu();
->>>>>>> 8c2eebde33ad2c1a864965bd1ca31ccb71b64944
 
 
 

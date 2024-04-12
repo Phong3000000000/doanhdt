@@ -25,7 +25,7 @@ namespace quanly_thu_chi_trongthang
         {
             for (int i = 0; i < dsgiaodich.Count(); i++)
             {
-                Console.WriteLine("giao dich thu " + i + "la: ");
+                Console.WriteLine("giao dich thu " + (i + 1) + " la: ");
                 dsgiaodich[i].xuat1gd();
             }
         }

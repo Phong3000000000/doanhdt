@@ -19,6 +19,8 @@ namespace quanly_thu_chi_trongthang
             dsgiaodich.Add(gd);
         }
 
+
+
         public void xuat_ds_giaodich()
         {
             for (int i = 0; i < dsgiaodich.Count(); i++)
@@ -26,6 +28,19 @@ namespace quanly_thu_chi_trongthang
                 Console.WriteLine("giao dich thu " + i + "la: ");
                 dsgiaodich[i].xuat1gd();
             }
+        }
+
+        public double Tinhtong_theo_danhmuc(string loaidanhmuc)
+        {
+            double sum = 0;
+            for (int i = 0; i < dsgiaodich.Count(); i++)
+            {
+                if (dsgiaodich[i].Danhmuc == loaidanhmuc)
+                {
+                    sum += dsgiaodich[i].Sotien;
+                }
+            }
+            return sum;
         }
     }
 }

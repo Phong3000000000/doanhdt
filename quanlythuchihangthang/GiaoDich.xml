@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DanhSach>
+	<GiaoDich>
+		<Loai>chi</Loai>
+		<SoTien>400</SoTien>
+		<MoTa>an sang</MoTa>
+		<ThoiGian>9</ThoiGian>
+		<DanhMuc>an uong</DanhMuc>
+		<MoTaDM>chay</MoTaDM>
+		<MaGD>A101</MaGD>
+	</GiaoDich>
+
+	<GiaoDich>
+		<Loai>chi</Loai>
+		<SoTien>200</SoTien>
+		<MoTa>quan ao</MoTa>
+		<ThoiGian>11</ThoiGian>
+		<DanhMuc>mua sam</DanhMuc>
+		<MoTaDM>online</MoTaDM>
+		<MaGD>A102</MaGD>
+	</GiaoDich>
+	
+	<GiaoDich>
+		<Loai>chi</Loai>
+		<SoTien>35000</SoTien>
+		<MoTa>my</MoTa>
+		<ThoiGian>10</ThoiGian>
+		<DanhMuc>du lich</DanhMuc>
+		<MoTaDM>trong nuoc</MoTaDM>
+		<MaGD>A103</MaGD>
+	</GiaoDich>
+
+	
+</DanhSach>

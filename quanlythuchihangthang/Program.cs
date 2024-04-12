@@ -15,19 +15,20 @@ namespace quanly_thu_chi_trongthang
             //gd.xuat1gd();
 
             DanhSachGiaoDich dsgd = new DanhSachGiaoDich();
-            dsgd.them_gd_vao_ds_giaodich();
-            dsgd.them_gd_vao_ds_giaodich();
+            //dsgd.them_gd_vao_ds_giaodich();
+            //dsgd.them_gd_vao_ds_giaodich();
 
+            dsgd.nhapTuFileXml("GiaoDich.xml");
+            dsgd.xuat_ds_giaodich();
 
             //dsgd.xuat_ds_giaodich();
-            double tinhTong = dsgd.Tinhtong_theo_danhmuc("an uong");
+            //double tinhTong = dsgd.Tinhtong_theo_danhmuc("an uong");
 
 
 
-            DanhMucChiTieu dm = new DanhMucChiTieu(tinhTong);
-
-            dm.TaoDanhMuc();
-
+            DanhMucChiTieu dm = new DanhMucChiTieu(dsgd);
+            //dm.TaoDanhMuc();
+            dm.ThongBaoMucChiTieu();
             dm.KiemTraVuotMucChiTieu();
 
 

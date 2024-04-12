@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace quanly_thu_chi_trongthang
 {
@@ -19,6 +20,27 @@ namespace quanly_thu_chi_trongthang
             Console.WriteLine("giao dich da duoc them vao danh sach giao dich");
             dsgiaodich.Add(gd);
         }
+
+        public void nhapTuFileXml(string file)
+        {
+            XmlDocument read = new XmlDocument();
+            read.Load(file);
+
+            XmlNodeList nodeList = read.SelectNodes("/DanhSach/GiaoDich");
+            foreach (XmlNode node in nodeList)
+            {
+                GiaoDich gd = new GiaoDich();
+                gd.Loai = node["Loai"].InnerText;
+                gd.Sotien = double.Parse(node["SoTien"].InnerText);
+                gd.Mota = node["MoTa"].InnerText;
+                gd.Thoigian = node["ThoiGian"].InnerText;
+                gd.Danhmuc = node["DanhMuc"].InnerText;
+                gd.Motadanhmuc = node["MoTaDM"].InnerText;
+                gd.Magd = node["MaGD"].InnerText;
+                dsgiaodich.Add(gd);
+            }
+        }
+    
 
         public void xoa_gd_khoi_ds_giaodich()
         {

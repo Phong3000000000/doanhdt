@@ -17,13 +17,23 @@ namespace quanly_thu_chi_trongthang
         public double MucChiTieu { get => _MucChiTieu; set => _MucChiTieu = value; }
 
         
-        public DanhMucChiTieu() { } 
-        public DanhMucChiTieu(double tinhTong) 
+        public DanhMucChiTieu() { }
+        //public DanhMucChiTieu(DanhSachGiaoDich dsgd) 
+        //{
+        //    this.TenDanhMuc = "";
+        //    this.MucNganSachDuocPhanBo = 0;
+        //    //this.MucChiTieu = tinhTong;
+        //    this.MucChiTieu = dsgd.Tinhtong_theo_danhmuc(TenDanhMuc);
+        //}
+
+        public DanhMucChiTieu(DanhSachGiaoDich dsgd)
         {
-            this.TenDanhMuc = "";
+            Console.WriteLine("Nhập vào tên danh mục:");
+            this.TenDanhMuc = Console.ReadLine();
             this.MucNganSachDuocPhanBo = 0;
-            this.MucChiTieu = tinhTong;
+            this.MucChiTieu = dsgd.Tinhtong_theo_danhmuc(this.TenDanhMuc);
         }
+
 
         public DanhMucChiTieu(string tendanhmuc, double mucngansachduocphanbo, double mucchitieu)
         {

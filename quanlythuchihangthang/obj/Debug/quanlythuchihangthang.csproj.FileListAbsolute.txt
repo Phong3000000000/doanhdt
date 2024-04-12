@@ -1,10 +1,8 @@
 C:\Users\PHONG\Downloads\quanlythuchihangthang\quanlythuchihangthang\bin\Debug\quanlythuchihangthang.exe.config
-C:\Users\PC ACER\Source\Repos\doanhdt\quanlythuchihangthang\bin\Debug\quanlythuchihangthang.exe.config
-C:\Users\PC ACER\Source\Repos\doanhdt\quanlythuchihangthang\bin\Debug\quanlythuchihangthang.exe
-C:\Users\PC ACER\Source\Repos\doanhdt\quanlythuchihangthang\bin\Debug\quanlythuchihangthang.pdb
 C:\Users\PC ACER\Source\Repos\doanhdt\quanlythuchihangthang\obj\Debug\quanlythuchihangthang.csproj.AssemblyReference.cache
 C:\Users\PC ACER\Source\Repos\doanhdt\quanlythuchihangthang\obj\Debug\quanlythuchihangthang.csproj.SuggestedBindingRedirects.cache
 C:\Users\PC ACER\Source\Repos\doanhdt\quanlythuchihangthang\obj\Debug\quanlythuchihangthang.csproj.CoreCompileInputs.cache
+<<<<<<< HEAD
 C:\Users\PC ACER\Source\Repos\doanhdt\quanlythuchihangthang\obj\Debug\quanlythuchihangthang.exe
 C:\Users\PC ACER\Source\Repos\doanhdt\quanlythuchihangthang\obj\Debug\quanlythuchihangthang.pdb
 C:\Users\Lenovo\Downloads\File tài liệu HK4\Lập trình hướng đối tượng\doanhdt\quanlythuchihangthang\bin\Debug\quanlythuchihangthang.exe.config
@@ -14,3 +12,8 @@ C:\Users\Lenovo\Downloads\File tài liệu HK4\Lập trình hướng đối tư�
 C:\Users\Lenovo\Downloads\File tài liệu HK4\Lập trình hướng đối tượng\doanhdt\quanlythuchihangthang\obj\Debug\quanlythuchihangthang.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Downloads\File tài liệu HK4\Lập trình hướng đối tượng\doanhdt\quanlythuchihangthang\obj\Debug\quanlythuchihangthang.exe
 C:\Users\Lenovo\Downloads\File tài liệu HK4\Lập trình hướng đối tượng\doanhdt\quanlythuchihangthang\obj\Debug\quanlythuchihangthang.pdb
+=======
+C:\Users\PC ACER\source\repos\doanhdt\quanlythuchihangthang\bin\Debug\quanlythuchihangthang.exe.config
+C:\Users\PC ACER\source\repos\doanhdt\quanlythuchihangthang\bin\Debug\quanlythuchihangthang.exe
+C:\Users\PC ACER\source\repos\doanhdt\quanlythuchihangthang\bin\Debug\quanlythuchihangthang.pdb
+>>>>>>> e7566dd588043dfc1579dc9ca602c4aad01d41ad

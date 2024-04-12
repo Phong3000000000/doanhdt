@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DanhMucChiTieu.cs" />
     <Compile Include="DanhMucAnUong.cs" />
+    <Compile Include="DanhMucChiTieu.cs" />
     <Compile Include="DanhMucDuLich.cs" />
     <Compile Include="DanhMucMuaSam.cs" />
     <Compile Include="DanhSachDanhMuc.cs" />

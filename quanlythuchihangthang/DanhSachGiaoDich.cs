@@ -22,7 +22,18 @@ namespace quanly_thu_chi_trongthang
 
         public void xoa_gd_khoi_ds_giaodich()
         {
-
+            string temp;
+            xuat_ds_giaodich();
+            Console.WriteLine("nhap magd cua giao dich ban muon xoa: ");
+            temp = Console.ReadLine();
+            for (int i = 0; i < dsgiaodich.Count(); i++)
+            {
+                if (dsgiaodich[i].Magd == temp)
+                {
+                    dsgiaodich.RemoveAt(i);
+                    Console.WriteLine("da xoa phan tu co ma: " + temp);
+                }
+            }
         }
 
 

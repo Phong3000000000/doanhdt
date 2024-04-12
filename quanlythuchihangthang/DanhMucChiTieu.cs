@@ -41,8 +41,9 @@ namespace quanly_thu_chi_trongthang
         }
 
 
-        public void KiemTraVuotMucChiTieu()
+        public void KiemTraVuotMucChiTieu(DanhSachGiaoDich dsgd)
         {
+            MucChiTieu = dsgd.Tinhtong_theo_danhmuc("an uong");
             if (MucChiTieu >= MucNganSachDuocPhanBo)
             {
                 if (MucChiTieu > MucNganSachDuocPhanBo)

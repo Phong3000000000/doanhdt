@@ -22,6 +22,8 @@ namespace quanly_thu_chi_trongthang
             dsgd.xuat_ds_giaodich();
             dsgd.Tinhtong_theo_danhmuc("an uong");
 
+            DanhMucChiTieu dm = new DanhMucChiTieu();
+            dm.KiemTraVuotMucChiTieu(dsgd);
 
 
             Console.ReadLine();

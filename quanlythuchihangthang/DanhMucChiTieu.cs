@@ -10,27 +10,20 @@ namespace quanly_thu_chi_trongthang
     {
         string _TenDanhMuc;
         double _MucNganSachDuocPhanBo;
-
-        public override double Tinhtong_theo_danhmuc(string loaidanhmuc)
-        {
-            return base.Tinhtong_theo_danhmuc(loaidanhmuc);
-        }
         double _MucChiTieu;
-
-        public void xuatgiatri()
-        {
-            DanhSachGiaoDich dsgd = new DanhSachGiaoDich();
-            double tinhtong = dsgd.Tinhtong_theo_danhmuc("an uong");
-            Console.WriteLine("{0}", tinhtong);
-        }
-
 
         public string TenDanhMuc { get => _TenDanhMuc; set => _TenDanhMuc = value; }
         public double MucNganSachDuocPhanBo { get => _MucNganSachDuocPhanBo; set => _MucNganSachDuocPhanBo = value; }
         public double MucChiTieu { get => _MucChiTieu; set => _MucChiTieu = value; }
 
-
-        public DanhMucChiTieu() { }
+        
+        public DanhMucChiTieu() { } 
+        public DanhMucChiTieu(double tinhTong) 
+        {
+            this.TenDanhMuc = "";
+            this.MucNganSachDuocPhanBo = 0;
+            this.MucChiTieu = tinhTong;
+        }
 
         public DanhMucChiTieu(string tendanhmuc, double mucngansachduocphanbo, double mucchitieu)
         {
@@ -47,15 +40,17 @@ namespace quanly_thu_chi_trongthang
         }
 
 
+      
+
         public void ThongBaoMucChiTieu()
         {
             Console.WriteLine("Muc chi tieu cua danh muc la: {0}", MucChiTieu);
         }
 
 
-        public void KiemTraVuotMucChiTieu(DanhSachGiaoDich dsgd)
+        public void KiemTraVuotMucChiTieu()
         {
-            MucChiTieu = dsgd.Tinhtong_theo_danhmuc("an uong");
+            //MucChiTieu = dsgd.Tinhtong_theo_danhmuc(TenDanhMuc);
             if (MucChiTieu >= MucNganSachDuocPhanBo)
             {
                 if (MucChiTieu > MucNganSachDuocPhanBo)
@@ -76,6 +71,8 @@ namespace quanly_thu_chi_trongthang
                 Console.WriteLine("Congratulation! Ban da tiet kiem duoc {0} so voi so tien da phan bo!", chiTieuAnToan);
             }
         }
+
+
 
         public virtual void TaoDanhMuc()
         {

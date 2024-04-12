@@ -15,8 +15,14 @@ namespace quanly_thu_chi_trongthang
             Console.WriteLine("them giao dich vao danh sach giao dich");
             GiaoDich gd = new GiaoDich();
             gd.tao1gd();
+
             Console.WriteLine("giao dich da duoc them vao danh sach giao dich");
             dsgiaodich.Add(gd);
+        }
+
+        public void xoa_gd_khoi_ds_giaodich()
+        {
+
         }
 
 
@@ -30,6 +36,8 @@ namespace quanly_thu_chi_trongthang
             }
         }
 
+
+
         public double Tinhtong_theo_danhmuc(string loaidanhmuc)
         {
             double sum = 0;
@@ -40,6 +48,7 @@ namespace quanly_thu_chi_trongthang
                     sum += dsgiaodich[i].Sotien;
                 }
             }
+            Console.WriteLine("tong cua ds giao dich: " + sum);
             return sum;
         }
     }
